@@ -1,0 +1,6 @@
+#!/usr/bin/env bash -e
+
+rm -f $1.out
+gcc -o $1.out $1
+cat input | ./$1.out
+rm -f $1.out
